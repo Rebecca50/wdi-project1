@@ -1,0 +1,56 @@
+html {
+  background: url(http://sr.photos2.fotosearch.com/bthumb/CSP/CSP599/k5994184.jpg) no-repeat center right fixed;
+  -webkit-background-size: 500px (w) x 500px (h);
+  -moz-background-size: 500px (w) x 500px (h);
+  -o-background-size: 500px (w) x 500px (h);
+  background-size: 500px (w) x 500px (h);
+  color: orange;
+  font-family: Verdana;
+  font-size: 36px;
+
+}
+
+@media (max-width: 500px) {
+  body {
+    background-color: black;
+  }
+  h1 {
+    font-size: 30px;
+    color: white;
+  }
+}
+
+.container {
+
+background: rgba(0,0,0,0.5);
+font-family: Verdana;
+text-align: left;
+color: black;
+}
+
+h1 {
+font-family: Verdana;
+font-size: 36px;
+text-align: center;
+color: black;
+
+
+}
+
+li {
+
+font-family: Verdana;
+font-size: 18px;
+text-align: center;
+color: black;
+
+}
+
+p {
+
+font-family: Verdana;
+font-size: 36px;
+text-align: center;
+color: black;
+
+}
