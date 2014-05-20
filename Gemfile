@@ -49,4 +49,7 @@ group :development do
 
  gem 'bcrypt'
 
+ gem 'simplificator-withings'
 end
+
+
