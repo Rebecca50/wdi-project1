@@ -20,6 +20,7 @@ class TeamMembershipsController < ApplicationController
         redirect_to show_path(user), notice: "Signed In as #{user.email}"<br>"Team: EarthGirl1"
       else
         redirect_to show_path(user), alert: "Team Membership Turned Down. Try again!"
+      end
   end
 
 

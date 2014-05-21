@@ -17,13 +17,4 @@ module Compost
 end
 
 
-#  config ={
-#     :consumer_key =>ENV.fetch('WITHINGS_USER_ID')
-#     :consumer_secret =>ENV.fetch('CONSUMER_SECRET')
-#     }
 
-#     user = Withings::REST::User.new(config)
-
-#     user.search("user.measurement_groups.map{|group| group.weight}", :result_type => "recent").take(10).each do |group|
-#   puts tweet.text
-# end
