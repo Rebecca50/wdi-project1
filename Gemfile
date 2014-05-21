@@ -38,6 +38,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'font-awesome-rails'
+
 group :development do
   gem 'pry'
   gem 'pry-nav'
@@ -45,7 +47,7 @@ group :development do
 
  gem 'withings-api'
  gem 'ruby-hmac'
- gem 'font-awesome-rails'
+
 
  gem 'bcrypt'
 
