@@ -44,6 +44,7 @@ gem 'withings-api'
  gem 'bcrypt'
  gem 'simplificator-withings'
  gem 'rubyvis'
+ gem 'rails_12factor'
 
 group :development do
   gem 'pry'
