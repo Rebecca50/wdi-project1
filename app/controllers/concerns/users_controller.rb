@@ -14,8 +14,17 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
 
-  def update
-    # User.find(params[:id])
+  def show
+    # weighings_data = Compost.weighings.compact
+
+    weighings_data = (1..50).to_a
+    @svg = Graph.barchart(weighings_data)
+
+  end
+
+  def forum
+    User.find(params[:id])
+    redirect_to update_path
   end
 
   private

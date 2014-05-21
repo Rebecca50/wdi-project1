@@ -50,6 +50,7 @@ group :development do
  gem 'bcrypt'
 
  gem 'simplificator-withings'
+ gem 'rubyvis'
 end
 
 
