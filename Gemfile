@@ -39,20 +39,23 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'font-awesome-rails'
+gem 'withings-api'
+ gem 'ruby-hmac'
+ gem 'bcrypt'
+ gem 'simplificator-withings'
+ gem 'rubyvis'
 
 group :development do
   gem 'pry'
   gem 'pry-nav'
   gem 'rspec-rails'
 
- gem 'withings-api'
- gem 'ruby-hmac'
 
 
- gem 'bcrypt'
 
- gem 'simplificator-withings'
- gem 'rubyvis'
+
+
+
 end
 
 
