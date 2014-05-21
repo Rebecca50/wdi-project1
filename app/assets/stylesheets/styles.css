@@ -13,12 +13,19 @@ html {
 @media (max-width: 500px) {
   body {
     background-color: black;
+    color: white;
   }
   h1 {
     font-size: 30px;
     color: white;
   }
 }
+
+/*.who {
+-webkit-column-count:3;  Chrome, Safari, Opera
+-moz-column-count:3; /* Firefox
+column-count:3;
+}*/*/
 
 .container {
 

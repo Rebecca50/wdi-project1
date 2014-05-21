@@ -1,7 +1,7 @@
 <h1>My Account</h1>
 
 
-<a href="pick_ups/new.html.erb">
+<a href="/users/<%= current_user.id %>/pick_ups/new">
 <h2> Schedule A Pick-Up</h2>
 </a><br>
 
@@ -10,19 +10,21 @@
 
 <%= raw @svg %>
 
+<a href="users/<%= current_user.id %>/team_memberships/new">
 <h2> My Teams</h2>
+</a><br>
 
 
 
 
-<a href="forum.html.erb">
+<a href="users/<%= current_user.id %>/forum">
 Community
 </a><br>
 
-<a href="tips.html.erb">
+<a href="users/<%= current_user.id %>/tips">
 Tips & Troubleshooting
 </a><br>
 
-<a href="my_park.html.erb">
+<a href="/<%= current_user.id %>/my_park">
 My Park
 </a><br>

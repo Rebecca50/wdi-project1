@@ -9,7 +9,6 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-      binding.pry
       redirect_to user_path(user), notice: "Signed In as #{user.email}"
     else
       redirect_to log_in_path, alert: 'Log-In Failed'

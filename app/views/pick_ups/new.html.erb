@@ -1,0 +1,19 @@
+<h2> Enter Your Preferred Pick-Up</h2>
+
+
+
+<%= form_for @pick_up, url: user_pick_ups_path({user_id: current_user.id}) do |f|%>
+  <p>
+   <%= f.label :user_id%>
+   <%= f.text_field :user_id %></p>
+  <p>
+  <%= f.label :name %>
+   <%= f.text_field :name %></p>
+   <p>
+    <%= f.label :location %>
+    <%= f.text_field :location %></p>
+    <p>
+    <%= f.label :weight %>
+   <%= f.text_field :weight %></p>
+  <p><%= f.submit %></p>
+<% end %>

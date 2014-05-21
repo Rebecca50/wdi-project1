@@ -15,8 +15,16 @@ Rails.application.routes.draw do
   delete 'sessions' => 'sessions#destroy', as: 'log_out'
   get 'profiles' => 'profiles#index'
 
-  get 'users/:id/pickups/new' => 'pickups#new'
-  post 'users/:id/pickups/' => 'pickups#create'
+  get 'users/:id/team_memberships/new' => 'team_memberships#new', as: 'new_team_memberships'
+  post 'users/:id/team_memberships/' => 'team_memberships#create', as: 'new_team_memberships'
+
+  get 'users/:id/pick_ups/new' => 'pick_ups#new', as: 'new_pick_up'
+  post 'users/:id/pick_ups' => 'pick_ups#create', as: 'user_pick_ups'
+
+
+  # resources :users, only: [:new, :create, :index, :show] do
+  #   resources :pick_ups, only: [:new, :create]
+  # end
 
 
 

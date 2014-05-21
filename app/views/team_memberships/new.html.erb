@@ -1,11 +1,11 @@
 <h2>My Team Memberships<h2>
 
-
+<%= form_for @team_membership, url: user_team_memberships_path({user_id: current_user.id}) do |f|%>
 <p>
    <%= f.label :user_id%>
    <%= f.text_field :user_id %></p>
  <p>
   <%= f.label :name %>
-   <%= f.password_field :name %></p>
+   <%= f.text_field :name %></p>
   <p><%= f.submit %></p>
 <% end %>
