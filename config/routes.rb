@@ -1,11 +1,16 @@
 Rails.application.routes.draw do
   root "users#index"
+
+  get 'users/forum' => 'users#forum'
+  get 'users/tips' => 'users#tips'
+  get 'users/my_park' => 'users#my_park'
+
   get 'users' => "users#index"
   get 'users/new' => "users#new"
   post 'users' => "users#create"
   get 'users/:id' => 'users#show', as: 'user'
 
-  get 'users/forum' => 'users#forum'
+
 
   get 'sessions/new' => 'sessions#new', as: 'log_in'
   post 'sessions' => 'sessions#create'
@@ -15,11 +20,13 @@ Rails.application.routes.draw do
   delete 'sessions' => 'sessions#destroy', as: 'log_out'
   get 'profiles' => 'profiles#index'
 
-  # get 'users/:id/team_memberships/new' => 'team_memberships#new', as: 'new_team_memberships'
-  # post 'users/:id/team_memberships/' => 'team_memberships#create', as: 'user_team_memberships'
+  get 'users/:id/team_memberships/new' => 'team_memberships#new', as: 'new_team_memberships'
+  post 'users/:id/team_memberships/' => 'team_memberships#create', as: 'user_team_memberships'
 
   get 'users/:id/pick_ups/new' => 'pick_ups#new', as: 'new_pick_up'
   post 'users/:id/pick_ups' => 'pick_ups#create', as: 'user_pick_ups'
+
+
 
 
   # resources :users, only: [:new, :create, :index, :show] do

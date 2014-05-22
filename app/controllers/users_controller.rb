@@ -24,12 +24,11 @@ class UsersController < ApplicationController
     weighings_data = (1..50).to_a
     @svg = Graph.barchart(weighings_data)
 
+    @pick_ups = PickUp.where(user_id: current_user.id)
+    @team_memberships = TeamMembership.where(user_id: current_user.id)
   end
 
-  def forum
-    User.find(params[:id])
-    redirect_to update_path
-  end
+
 
   private
 

@@ -1,30 +1,43 @@
-<h1>My Account</h1>
+<h2>My Account</h2>
 
 
 <a href="/users/<%= current_user.id %>/pick_ups/new">
-<h2> Schedule A Pick-Up</h2>
+<p> Schedule A Pick-Up</p>
 </a><br>
 
+<h2>My Scheduled Pickups</h2>
 
-<h2> Track My Weigh-Ins</h2>
+<div class="user-pick_ups">
+  <ul>
+    <% @pick_ups.each do |pu|%>
+      <li>Weight: <%= pu.weight %> kgs</li>
+    <% end %>
+  </ul>
+</div>
+
+<h4> Track My Weigh-Ins</h4>
 
 <%= raw @svg %>
 
-<a href="users/<%= current_user.id %>/team_memberships/new">
-<h2> My Teams</h2>
+<a href="<%= current_user.id %>/team_memberships/new">
+<h4> My Teams</h4>
 </a><br>
 
+<div class="user-team_memberships">
+  <ul>
+    <% @team_memberships.each do |tm|%>
+      <li>Team: <%= tm.team_id %></li>
+    <% end %>
+  </ul>
+</div>
 
 
 
-<a href="users/<%= current_user.id %>/forum">
-Community
-</a><br>
 
-<a href="users/<%= current_user.id %>/tips">
-Tips & Troubleshooting
-</a><br>
+<a href="/users/forum"><p>Community</p></a><br>
 
-<a href="/<%= current_user.id %>/my_park">
-My Park
-</a><br>
+<a href="/users/tips"><p>Tips & Troubleshooting</p></a><br>
+
+<a href="/users/my_park"><p>My Park</p></a><br>
+
+

@@ -6,6 +6,7 @@ class PickUpsController < ApplicationController
 
   def new
     @pick_up = PickUp.new
+    @user = current_user
   end
 
   def create
@@ -17,6 +18,6 @@ class PickUpsController < ApplicationController
   private
 
   def pickup_params
-    params.require(:pick_up).permit(:user_id, :weight)
+    params.require(:pick_up).permit(:user_id, :weight,)
   end
 end

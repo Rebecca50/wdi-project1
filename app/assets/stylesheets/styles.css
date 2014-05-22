@@ -4,21 +4,48 @@ html {
   -moz-background-size: 500px (w) x 500px (h);
   -o-background-size: 500px (w) x 500px (h);
   background-size: 500px (w) x 500px (h);
+  padding-right: 40;
   color: orange;
   font-family: Verdana;
   font-size: 36px;
 
 }
 
+a:link {
+  color: blue;    /* unvisited link */
+
+}
+
+a:visited {
+  color: green;
+  } /* visited link */
+
+
 @media (max-width: 500px) {
   body {
     background-color: black;
     color: white;
   }
-  h1 {
+
+h1 {
     font-size: 30px;
-    color: white;
+    color: orange;
+    text-align: center;
   }
+
+h2 {
+
+}
+
+h3 {
+
+
+}
+
+h4 {
+
+
+}
 }
 
 /*.who {
