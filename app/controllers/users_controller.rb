@@ -19,11 +19,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    # weighings_data = Compost.weighings.compact
-
-    weighings_data = (1..50).to_a
+    weighings_data = Compost.weighings.compact
     @svg = Graph.barchart(weighings_data)
-
     @pick_ups = PickUp.where(user_id: current_user.id)
     @team_memberships = TeamMembership.where(user_id: current_user.id)
   end
