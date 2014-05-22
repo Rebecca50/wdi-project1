@@ -40,7 +40,7 @@ h1 {
     text-align: center;
   }
 
-h2 {
+h2 span{
   font-size: 50px;
   color: orange;
   text-align: center;
@@ -152,5 +152,32 @@ footer {
   background-color: orange;
   border-radius: 5px;
   margin-top: 400px;
+
+}
+
+
+h2 {
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+  background-color: gray;
+  border-radius: 5px;
+}
+
+
+h3{
+  margin-left: 30px;
+}
+
+
+h4 {
+  font-style: bold;
+  font-size: 28px;
+  color: rgb(172, 112, 2);
+  background-color: rgb(180, 173, 173);
+  background-size: 400px (w);
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 30px;
 
 }
