@@ -1,5 +1,7 @@
+<h2><span style="font-family: Lucida-Calligraphy;">WormTurn</span></h2>
+
 <!-- <div class="who"> -->
-  <h2>WHO</h2>
+  <h3>WHO</h3>
 
 <ul>
   <li>WormTurn is NewYorkCity's white-glove compost collection service.</li>
@@ -7,25 +9,25 @@
 </ul>
 
 
-<h2>WHAT</h2>
+<h3>WHAT</h3>
 
 <ul>
-  <li>We provide a complimentary, hygienic Starter Kit, together with some easy information.</li>
+  <li>We provide a shiny, clean and complimentary WormTurn Starter Kit, together with some easy information.</li>
   <li>You tell us when you'd like the collection. Each time we arrive at your door to pick up, we’ll also replace your worm kit.</li>
+  <li>You don't have to take your vegetable peelings miles to the nearest drop-off location. WormTurn will deliver them directly for you.</li>
 </ul>
 
 
-<h2>WHY</h2>
+<h3>WHY</h3>
 
 <ul>
-  <li>As NewYorkers, we all love our parks & open spaces and rely heavily on their presence in our neighborhoods. But did you know that they in turn rely heavily on hazardous fertilizers and pesticides to stay green?</li>
-
+  <li>As NewYorkers, we all love our parks & open spaces, but did you know that they in turn rely heavily on hazardous fertilizers and pesticides to stay green?</li>
   <li>We save energy, we recycle paper, metal and plastics. We're good at that in New York. But we still throw away 20lbs of perishable food, per person, per month.
-Now, WormTurn makes it easy for you to recycle your discarded food. And you can give your neighborhood gardens and green spaces the organic, fertilizer- and phosphate-free rescue they need.
-1lb worms can consume 1/2lb of perishable food per day. You just need to feed them! And if you have kids, that’s gotta be better than an ant farm!</li>
+  Now, WormTurn makes it easy for you to recycle your discarded food. </li>
+  <li>And you can give your neighborhood gardens and green spaces the organic, fertilizer- and phosphate-free rescue they need.</li>
+  <li>1lb of red wrigglers can consume 1/2lb of perishable food per day. You just need to feed them! And if you have kids, that’s way more cool than an ant farm!</li>
+  <li>So before you empty the contents of your fridge, think what a turning worm can do to help the park where you run, bike or like to sit in the sun.</li>
 
-  <li>So before you empty the contents of your fridge, think what a turning worm can do to help the park where you run, bike or like to sit in the sun.
-You don't have to take your vegetable peelings miles to the nearest drop-off location. WormTurn will deliver them directly for you.</li>
 
   <li>WormTurn makes doing the right thing hassle-free.</li>
 </ul>
@@ -33,9 +35,9 @@ You don't have to take your vegetable peelings miles to the nearest drop-off loc
 
 
 
-<p>Tell your friends! Be the first worm to turn in your community!</p>
+<h4>Be the first worm to turn in your community!</h4>
 
-<p>Let's get started!</p>
+<h6>Let's get started!</h6>
 
 <% if @user.errors.any? %>
   <div class="errors">
@@ -51,19 +53,31 @@ You don't have to take your vegetable peelings miles to the nearest drop-off loc
 <% end %>
 
 <%= form_for @user do |f| %>
- <p> <%= f.label :email %>
-   <%= f.text_field :email %></p>
+<div class="form">
   <p>
-   <%= f.label :email_confirmation %>
-   <%= f.text_field :email_confirmation %></p>
- <p>
-  <%= f.label :password %>
-   <%= f.password_field :password %></p>
-  <p><%= f.label :password_confirmation %>
+    <%= f.label :email %>
+    <%= f.text_field :email %></p>
+  <p>
+    <%= f.label :email_confirmation %>
+    <%= f.text_field :email_confirmation %></p>
+  <p>
+    <%= f.label :password %>
+    <%= f.password_field :password %></p>
+  <p>
+    <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation %></p>
   <p>
     <%= f.label :terms_of_service %>
-    <%= f.check_box :terms_of_service %>
-  </p>
+    <%= f.check_box :terms_of_service %></p>
+
   <p><%= f.submit %></p>
+
 <% end %>
+
+</div>
+
+
+
+
+<footer>WormTurn, 235 Riverside, New York, NY 10023 Tel:212 865 1569</footer>
+

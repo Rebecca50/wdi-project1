@@ -1,14 +1,18 @@
 html {
+
   background: url(http://sr.photos2.fotosearch.com/bthumb/CSP/CSP599/k5994184.jpg) no-repeat center right fixed;
-  -webkit-background-size: 500px (w) x 500px (h);
-  -moz-background-size: 500px (w) x 500px (h);
-  -o-background-size: 500px (w) x 500px (h);
-  background-size: 500px (w) x 500px (h);
-  padding-right: 40;
+  -webkit-background-size: 600px (w) x 600px (h);
+  -moz-background-size: 600px (w) x 600px (h);
+  -o-background-size: 600px (w) x 600px (h);
+  background-size: 600px (w) x 600px (h);
   color: orange;
   font-family: Verdana;
   font-size: 36px;
 
+}
+
+CSS selector {
+  font-family: 'Swanky-and-Moo-Moo', serif;
 }
 
 a:link {
@@ -18,14 +22,17 @@ a:link {
 
 a:visited {
   color: green;
-  } /* visited link */
+
+} /* visited link */
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   body {
-    background-color: black;
+    background-color: red;
     color: white;
   }
+}
+
 
 h1 {
     font-size: 30px;
@@ -34,17 +41,48 @@ h1 {
   }
 
 h2 {
-
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+  background-color: gray;
+  border-radius: 5px;
 }
 
 h3 {
+  font-style: bold;
+  font-size: 30px;
+  color: orange;
+  text-align: left;
+  margin-left: 30px;
 
 
 }
 
 h4 {
+  font-style: bold;
+  font-size: 28px;
+  color: rgb(172, 112, 2);
+  background-color: rgb(180, 173, 173);
+  background-size: 400px (w);
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
 
 
+h5 {
+  font-style: italic;
+  font-size: 26px;
+  color: orange;
+  text-align: left;
+}
+
+h6 {
+  font-size: 30px;
+  color: orange;
+  text-align: center;
+  margin-top: 100px;
 }
 }
 
@@ -54,37 +92,65 @@ h4 {
 column-count:3;
 }*/
 
-.container {
+.graph {
 
-background: rgba(0,0,0,0.5);
+background: rgb(180, 173, 173);
 font-family: Verdana;
-text-align: left;
-color: black;
-}
-
-h1 {
-font-family: Verdana;
-font-size: 36px;
 text-align: center;
 color: black;
+border: 2px, black;
+}
 
+.show {
+
+  display: inline block;
+}
+
+.comment {
+
+  margin-top: 100px;
+  margin-bottom: 100px;
 
 }
 
 li {
 
 font-family: Verdana;
-font-size: 18px;
-text-align: center;
+font-size: 16px;
+text-align: left;
 color: black;
 
 }
 
 p {
 
-font-family: Verdana;
-font-size: 36px;
-text-align: center;
-color: black;
+  font-family: Verdana;
+  font-size: 16px;
+  text-align: center;
+  color: black;
+  border-top: 25px;
+
+}
+
+form {
+
+  font-family: Verdana;
+  font-size: 16px;
+  text-align: center;
+  color: black;
+  margin-top: 100px;
+  border-top: 25px;
+
+}
+
+footer {
+
+  font-family: Verdana;
+  font-size: 12px;
+  text-align: center;
+  color: gray;
+  background-color: orange;
+  border-radius: 5px;
+  margin-top: 400px;
 
 }

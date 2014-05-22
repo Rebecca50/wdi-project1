@@ -1,13 +1,25 @@
-<h4> Enter Your Preferred Pick-Up</h4>
+<h2><span style="font-family: Lucida-Calligraphy;">WormTurn</span></h2>
 
 
+
+<h4> Enter Your Pick-Up Details</h4>
+
+
+<div class="form">
 
 <%= form_for [@user, @pick_up] do |f|%>
   <p>
    <%= f.label :user_id%>
    <%= f.text_field :user_id %></p>
-    <p>
+  <p>
     <%= f.label :weight %>
-   <%= f.text_field :weight %></p>
+    <%= f.text_field :weight %></p>
+
   <p><%= f.submit %></p>
 <% end %>
+
+</div>
+
+
+
+<footer>WormTurn, 235 Riverside, New York, NY 10023 Tel:212 865 1569</footer>

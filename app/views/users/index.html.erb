@@ -1,5 +1,6 @@
-<h2>Welcome To <span style="font-family: Lucida-Calligraphy;">WormTurn</span></h2>
-<h4>From Table to Trees - NYC's Premier Kitchen Composting Service!</h4>
+<h2><span style="font-family: Lucida-Calligraphy;">WormTurn</span></h2>
+<h5>From Table to Trees:</h5>
+<h5>NYC's Premier Kitchen Composting Service!</h5>
 
 <% if current_user %>
   <p>
@@ -8,8 +9,10 @@
   <%= link_to "Log-Out", log_out_path, method: :delete %>
 
 <% else %>
+  <p>
   <%= link_to "Log-In", log_in_path %>
   <%= link_to "New User", users_new_path %>
+  </p>
 <% end %>
 
 
@@ -20,3 +23,5 @@
     </li>
   <% end %>
 </ul>
+
+<footer>WormTurn, 235 Riverside, New York, NY 10023 Tel:212 865 1569</footer>

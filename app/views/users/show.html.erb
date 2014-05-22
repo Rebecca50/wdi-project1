@@ -1,13 +1,14 @@
-<h2>My Account</h2>
+<h2><span style="font-family: Lucida-Calligraphy;">WormTurn</span></h2>
+
+<h6>My Account</h6>
 
 
-<a href="/users/<%= current_user.id %>/pick_ups/new">
-<p> Schedule A Pick-Up</p>
-</a><br>
 
-<h2>My Scheduled Pickups</h2>
+
 
 <div class="user-pick_ups">
+<h6>My Previous Pickups:</h6>
+
   <ul>
     <% @pick_ups.each do |pu|%>
       <li>Weight: <%= pu.weight %> kgs</li>
@@ -15,13 +16,26 @@
   </ul>
 </div>
 
-<h4> Track My Weigh-Ins</h4>
-
-<%= raw @svg %>
-
-<a href="<%= current_user.id %>/team_memberships/new">
-<h4> My Teams</h4>
+<a href="/users/<%= current_user.id %>/pick_ups/new">
+<p> Schedule A New Pick-Up</p>
 </a><br>
+
+
+
+<h6>Track My Weigh-Ins:</h6>
+
+  <div class="graph">
+    <%= raw @svg %>
+  </div>
+
+
+<h6>My Teams:</h6>
+<a href="<%= current_user.id %>/team_memberships/new">
+<p> Add A New Team</p>
+</a><br>
+
+
+
 
 <div class="user-team_memberships">
   <ul>
@@ -33,11 +47,12 @@
 
 
 
-
-<a href="/users/forum"><p>Community</p></a><br>
-
-<a href="/users/tips"><p>Tips & Troubleshooting</p></a><br>
-
-<a href="/users/my_park"><p>My Park</p></a><br>
+<div class="show">
+<a href="/users/forum"><p>Community</p></a><a href="/users/tips"><p>Tips & Troubleshooting</p></a><a href="/users/my_park"><p>My Park</p></a>
+</div>
 
 
+
+
+
+<footer>WormTurn, 235 Riverside, New York, NY 10023 Tel:212 865 1569</footer>
