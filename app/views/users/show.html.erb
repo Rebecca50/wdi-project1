@@ -7,7 +7,7 @@
 
 
 <div class="user-pick_ups">
-<h6>My Previous Pickups:</h6>
+  <h6>My Previous Pickups:</h6>
 
   <ul>
     <% @pick_ups.each do |pu|%>
@@ -17,21 +17,21 @@
 </div>
 
 <a href="/users/<%= current_user.id %>/pick_ups/new">
-<p> Schedule A New Pick-Up</p>
+  <p> Schedule A New Pick-Up</p>
 </a><br>
 
 
 
 <h6>Track My Weigh-Ins:</h6>
 
-  <div class="graph">
-    <%= raw @svg %>
-  </div>
+<div class="graph">
+  <%= raw @svg %>
+</div>
 
 
 <h6>My Teams:</h6>
 <a href="<%= current_user.id %>/team_memberships/new">
-<p> Add A New Team</p>
+  <p> Add A New Team</p>
 </a><br>
 
 
@@ -48,7 +48,7 @@
 
 
 <div class="show">
-<a href="/users/forum"><p>Community</p></a><a href="/users/tips"><p>Tips & Troubleshooting</p></a><a href="/users/my_park"><p>My Park</p></a>
+  <a href="/users/forum"><p>Community</p></a><a href="/users/tips"><p>Tips & Troubleshooting</p></a><a href="/users/my_park"><p>My Park</p></a>
 </div>
 
 
