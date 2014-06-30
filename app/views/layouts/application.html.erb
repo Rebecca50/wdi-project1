@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>WdiProject1</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <link href='http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo' rel='stylesheet' type='text/css'>
-</head>
-<body>
+  <head>
+    <title>WdiProject1</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <link href='http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
 
-<div>
-    <h1>
-      <%= flash.now[:alert] %>
-    </h1>
-    <h1>
-      <%= flash.now[:notice] %>
-    </h1>
-  </div>
+    <div>
+      <h1>
+        <%= flash.now[:alert] %>
+      </h1>
+      <h1>
+        <%= flash.now[:notice] %>
+      </h1>
+    </div>
 
-<%= yield %>
+    <%= yield %>
 
-</body>
+  </body>
 </html>

@@ -1,5 +1,10 @@
 class ApplicationController < ActionController::Base
+
+  # including Compost here is probably not what you want.
+  # This makes everything in Compost available to EVERY CONTROLLER.
+  # Most likely, you want to do something much more targeted.
   include Compost
+
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception

@@ -13,8 +13,7 @@ module Graph
         left {index * ((800 / data_array.length))}
       end
     end
-      vis.render()
-      vis.to_svg # Output final SVG
+    vis.render()
+    vis.to_svg # Output final SVG
   end
 end
-

@@ -40,11 +40,11 @@ gem 'spring',        group: :development
 
 gem 'font-awesome-rails'
 gem 'withings-api'
- gem 'ruby-hmac'
- gem 'bcrypt'
- gem 'simplificator-withings'
- gem 'rubyvis'
- gem 'rails_12factor'
+gem 'ruby-hmac'
+gem 'bcrypt'
+gem 'simplificator-withings'
+gem 'rubyvis'
+gem 'rails_12factor'
 
 group :development do
   gem 'pry'
@@ -58,5 +58,3 @@ group :development do
 
 
 end
-
-

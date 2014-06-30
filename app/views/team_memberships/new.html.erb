@@ -1,11 +1,11 @@
 <h2>My Team Memberships<h2>
 
-<%= form_for [@user, @team_membership] do |f|%>
-<p>
-   <%= f.label :user_id%>
-   <%= f.text_field :user_id %></p>
- <p>
-  <%= f.label :team_id %>
-   <%= f.text_field :team_id %></p>
-  <p><%= f.submit %></p>
-<% end %>
+  <%= form_for [@user, @team_membership] do |f|%>
+    <p>
+      <%= f.label :user_id%>
+      <%= f.text_field :user_id %></p>
+    <p>
+      <%= f.label :team_id %>
+      <%= f.text_field :team_id %></p>
+    <p><%= f.submit %></p>
+  <% end %>
